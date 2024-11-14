@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL THE HEAVEN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>HOTEL THE HEAVEN</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>UN LUGAR AGRADABLE Y CONFORTABLE</h2>
+                <p>Disfrute de una experiencia única de confort y lujo en el corazón de la ciudad. En el Hotel The Heaven, cada detalle ha sido pensado para ofrecer una estadía placentera y sofisticada, combinando elegancia y exclusividad en cada rincón.</p>
+                <u>
+                <button class = "btn sign-up" onclick="window.open('sign-up.html')">Registrar</button>
+                <button class = "btn log-in" onclick="window.open('sign-up.html')">Login</button>
+                </u>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Home</a></li>
+                <li><a href = "#services">Servicios</a></li>
+                <li><a href = "#rooms">Habitaciones</a></li>
+                <li><a href = "#customers">Clientes</a></li>
+            </ul>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>Servicios</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Servicio de comida</h2>
+                        <p>Disfrute de una experiencia gastronómica de primer nivel con nuestro servicio de comida, que ofrece una variedad de platos para satisfacer todos los gustos. Nuestro personal está comprometido en brindarle un servicio impecable.</p>
+                        <button type = "button" class = "btn">Conozca más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Zona de recreación</h2>
+                        <p>Relájese en nuestra zona de recreación, que incluye una piscina y áreas de descanso para que disfrute de un ambiente tranquilo y renovador. Perfecto para un día de descanso y relajación.</p>
+                        <button type = "button" class = "btn">Conozca más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Servicio de limpieza</h2>
+                        <p>Mantenemos nuestras instalaciones impecables y a la altura de los estándares más exigentes para garantizar su comodidad y satisfacción durante su estadía en el hotel.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Seguridad de habitaciones</h2>
+                        <p>La seguridad de nuestros huéspedes es nuestra prioridad. Contamos con tecnología avanzada para mantener su habitación y sus pertenencias seguras en todo momento.</p>
+                        <button type = "button" class = "btn">Conozca más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Fecha entrada: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Fecha salida: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adultos: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Niños: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Habitaciones: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Reservar">
+                </div>
+            </form>
+        </div>
+        <section class="rooms sec-width" id="rooms">
+            <div class="title">
+                <h2>Habitaciones</h2>
+            </div>
+            <div class="rooms-container">
+                <!-- habitación individual -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img1.jpg" alt="Imagen de la habitación">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitación de Lujo</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Amplias vistas a la ciudad.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Cama King Size de alta calidad.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Acceso a Wi-Fi de alta velocidad.
+                            </li>
+                        </ul>
+                        <p>Disfruta de una estancia en un entorno exclusivo con detalles elegantes y modernos. Perfecto para relajarse después de un día explorando o trabajando en la ciudad.</p>
+                        <p>Nuestras habitaciones están equipadas con todo lo necesario para una experiencia cómoda y sofisticada. Un refugio de paz en el corazón de la ciudad.</p>
+                        <p class="rate">
+                            <span>$1,700 /</span> Por Noche
+                        </p>
+                        <button type="button" class="btn">Reservar ahora</button>
+                    </div>
+                </article>
+                <!-- fin de habitación individual -->
+        
+                <!-- habitación individual -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img2.jpg" alt="Imagen de la habitación">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitación de Lujo</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Decoración moderna y elegante.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Servicio a la habitación 24/7.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                TV de alta definición con streaming.
+                            </li>
+                        </ul>
+                        <p>La habitación combina comodidad y estilo, ofreciendo el espacio ideal para descansar o trabajar en un ambiente tranquilo.</p>
+                        <p>Los huéspedes pueden disfrutar de la comodidad de nuestras camas, así como de una decoración elegante y servicios de primer nivel.</p>
+                        <p class="rate">
+                            <span>$2,900</span> Por Noche
+                        </p>
+                        <button type="button" class="btn">Reservar ahora</button>
+                    </div>
+                </article>
+                <!-- fin de habitación individual -->
+        
+                <!-- habitación individual -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img3.jpg" alt="Imagen de la habitación">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitación de Lujo</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Desayuno incluido.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Acceso al spa del hotel.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Minibar completo en la habitación.
+                            </li>
+                        </ul>
+                        <p>Esta habitación ofrece un espacio perfecto para el descanso y relajación, con todos los servicios que puedas necesitar a tu disposición.</p>
+                        <p>Disfruta de una experiencia de lujo con las comodidades y el confort que caracterizan nuestro hotel, desde un minibar bien surtido hasta un spa relajante.</p>
+                        <p class="rate">
+                            <span>$4,600 /</span> Por Noche
+                        </p>
+                        <button type="button" class="btn">Reservar ahora</button>
+                    </div>
+                </article>
+                <!-- fin de habitación individual -->
+            </div>
+        </section>
+        
+        <section class="customers" id="customers">
+            <div class="sec-width">
+                <div class="title">
+                    <h2>Clientes</h2>
+                </div>
+                <div class="customers-container">
+                    <!-- opinión de cliente -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h3>Nos encantó</h3>
+                        <p>El hotel nos brindó una experiencia inolvidable con un servicio excelente y habitaciones de lujo. Sin duda, un lugar al que volveremos.</p>
+                        <img src="images/cus1.jpg" alt="Imagen del cliente">
+                    </div>
+                    <!-- fin de opinión de cliente -->
+        
+                    <!-- opinión de cliente -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h3>Confort Inigualable</h3>
+                        <p>Las habitaciones son sumamente cómodas y el ambiente es perfecto para relajarse. Muy recomendable para quienes buscan calidad.</p>
+                        <img src="images/cus2.jpg" alt="Imagen del cliente">
+
+                    </div>
+                    <!-- fin de opinión de cliente -->
+        
+                    <!-- opinión de cliente -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <h3>Lugar encantador</h3>
+                        <p>Un hotel maravilloso, ideal para una estancia relajante. Todo estuvo perfecto, desde el servicio hasta las instalaciones.</p>
+                        <img src="images/cus3.jpg" alt="Imagen del cliente">
+                    </div>
+                    <!-- fin de opinión de cliente -->
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <p>The Heaven es un hotel exclusivo ubicado en el centro de Aguascalientes, México, dedicado a brindar a sus huéspedes una experiencia de lujo y confort en cada estancia.</p>
+            <ul class="social-icons">
+                <li class="flex">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </li>
+                <li class="flex">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </li>
+                <li class="flex">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Enlaces Útiles</h2>
+            <a href="#">Blog</a>
+            <a href="#">Habitaciones</a>
+            <a href="#">Suscripción</a>
+            <a href="#">Tarjeta de Regalo</a>
+        </div>
+
+        <div>
+            <h2>Privacidad</h2>
+            <a href="#">Carrera</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Servicios</a>
+        </div>
+
+        <div>
+            <h2>Tienes Alguna Pregunta?</h2>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span>
+                    Zona Centro, Aguascalientes, México
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <span>
+                    +52 449 387 9806
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>
+                    zar&kyo_theheaven@gmail.com
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+<script src="js/script.js"></script>
+</body>
+</html>

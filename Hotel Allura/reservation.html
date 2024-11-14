@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL THE HEAVEN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reservation-style.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/logo.png" type="image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="head-top">
+                <div class="site-name">
+                    <span>HOTEL THE HEAVEN</span>
+                    <div id="modal"></div>
+        </header>
+        <!-- end of header -->   
+
+        <div class="book">
+            <form class="book-form">
+                <div class="form-item">
+                    <label for="checkin-date">Fecha Entrada: </label>
+                    <input type="date" id="checkin-date">
+                </div>
+                <div class="form-item">
+                    <label for="checkout-date">Fecha Salida: </label>
+                    <input type="date" id="checkout-date">
+                </div>
+                <div class="form-item">
+                    <label for="adult">Adultos: </label>
+                    <input type="number" min="1" value="1" id="adult">
+                </div>
+                <div class="form-item">
+                    <label for="children">Niños: </label>
+                    <input type="number" min="0" value="0" id="children">
+                </div>
+                <div class="form-item">
+                    <label for="rooms">Habitaciones: </label>
+                    <input type="number" min="1" value="1" id="rooms">
+                </div>
+            </form>
+        </div>
+
+        <section class="rooms sec-width" id="rooms">
+            <div class="title">
+                <h2>Habitaciones</h2>
+            </div>
+            <div class="rooms-container">
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img1.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitación Deluxe</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Cama king-size con ropa de cama de lujo.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Vista panorámica de la ciudad o el mar.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Amenidades premium y minibar.
+                            </li>
+                        </ul>
+                        <p>Disfruta de una experiencia de lujo en nuestra habitación Deluxe, equipada con una cama king-size, vistas inigualables y servicios exclusivos. Ideal para parejas que buscan una estancia cómoda y elegante.</p>
+                        <p>La habitación cuenta con baño privado, ducha de efecto lluvia y todas las comodidades necesarias para una estancia perfecta.</p>
+                        <p class="rate">
+                            <span>$2,800 MXN</span> por noche
+                        </p>
+                        <button type="button" class="btn">Reservar</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img2.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Suite Ejecutiva</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Área de trabajo y zona de descanso.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Televisión inteligente de 50 pulgadas.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Acceso al salón VIP.
+                            </li>
+                        </ul>
+                        <p>La Suite Ejecutiva es ideal para viajeros de negocios, ofreciendo un espacio amplio con área de trabajo, una cómoda sala de estar y un ambiente sofisticado. Perfecto para combinar trabajo y descanso.</p>
+                        <p>Esta suite cuenta con servicios adicionales, como acceso al salón VIP y servicio a la habitación las 24 horas.</p>
+                        <p class="rate">
+                            <span>$3,500 MXN</span> por noche
+                        </p>
+                        <button type="button" class="btn">Reservar</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="images/img3.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Suite Presidencial</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Terraza privada con jacuzzi.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Área de comedor y cocina equipada.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Servicio de mayordomo personalizado.
+                            </li>
+                        </ul>
+                        <p>La Suite Presidencial ofrece una experiencia exclusiva y lujosa con terraza privada, jacuzzi y servicio de mayordomo. Es la opción ideal para aquellos que buscan la máxima comodidad y privacidad.</p>
+                        <p>Con amplios espacios, esta suite ofrece un área de comedor, una cocina totalmente equipada y todas las comodidades para una estancia inolvidable.</p>
+                        <p class="rate">
+                            <span>$7,500 MXN</span> por noche
+                        </p>
+                        <button type="button" class="btn">Reservar</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div>
+                    <h2>Sobre Nosotros</h2>
+                    <p>Hotel The Heaven es un lugar donde el lujo y la comodidad se encuentran. Ofrecemos una experiencia única para nuestros huéspedes, rodeados de un ambiente elegante y exclusivo.</p>
+                    <ul class="social-icons">
+                        <li class="flex">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Enlaces Útiles</h2>
+                    <a href="#">Blog</a>
+                    <a href="#">Habitaciones</a>
+                    <a href="#">Suscripción</a>
+                    <a href="#">Tarjeta de Regalo</a>
+                </div>
+
+                <div>
+                    <h2>Privacidad</h2>
+                    <a href="#">Carreras</a>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Servicios</a>
+                </div>
+
+                <div>
+                    <h2>Tiene Alguna Pregunta</h2>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100, Brasil
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hotelalura@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="/script.js"></script>
+    </body>
+</html>
